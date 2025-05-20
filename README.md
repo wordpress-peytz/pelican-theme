@@ -1,3 +1,3 @@
 # Pelican theme
 
-Test
+Test2
