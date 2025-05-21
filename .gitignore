@@ -14,7 +14,7 @@ Thumbs.db
 *.map
 node_modules
 !vendor
-assets/dist/
+!assets/dist/
 
 # Log files
 *.log
