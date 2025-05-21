@@ -5,7 +5,7 @@
 
 			<?php do_action( THEMEDOMAIN . '_before_mobile_navigation' ); ?>
 
-			<?php Pelican\Theme\Core\Menus::main_menu_mobile(); ?>
+			<?php Pelican\Theme\Core\AddMenus::main_menu_mobile(); ?>
 
 			<?php do_action( THEMEDOMAIN . '_after_mobile_navigation' ); ?>
 
