@@ -1,0 +1,27 @@
+@use '../mixins/selector-placeholders';
+
+body.archive .archive-header,
+body.blog .archive-header,
+body.search .archive-header {
+	@include selector-placeholders.container-list-selector-placeholder;
+
+	margin-top: var(--wp--preset--spacing--50);
+	margin-bottom: var(--wp--preset--spacing--50);
+}
+
+body.archive .archive-header__title,
+body.blog .archive-header__title,
+body.search .archive-header__title {
+	font-weight: var(--font-weight-medium);
+	margin: 0 0 var(--wp--preset--spacing--30);
+}
+
+body.archive .archive-header__prefix,
+body.blog .archive-header__prefix,
+body.search .archive-header__prefix {
+	font-size: 1em;
+}
+
+.content-wrapper--archive {
+	margin-bottom: var(--wp--preset--spacing--50);
+}

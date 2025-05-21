@@ -1,0 +1,19 @@
+@use '../helpers/functions/rem';
+
+// To avoid having duplicate 'container'-styles in our stylesheet we use '%' (Extend/Inheritance).
+// https://sass-lang.com/guide/#extend-inheritance;
+
+@mixin container($maxWidthPx, $gutter: false) {
+	max-width: #{rem.px-to-rem($maxWidthPx)};
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+
+	@if $gutter {
+		max-width: calc(
+		#{rem.px-to-rem($maxWidthPx)} + (2 * var(--side-gutter-width))
+		);
+		padding-left: var(--side-gutter-width);
+		padding-right: var(--side-gutter-width);
+	}
+}

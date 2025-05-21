@@ -1,0 +1,10 @@
+p {
+	font-size: var(--font-size-paragraph);
+	line-height: var(--line-height-paragraph);
+	margin-top: 0.25em;
+	margin-bottom: 1em;
+
+	strong {
+		font-weight: var(--font-weight-bold);
+	}
+}

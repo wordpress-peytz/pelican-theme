@@ -1,0 +1,6 @@
+!.eslintrc*
+!.prettierrc*
+fonts/*
+pattern-library/app/*
+node_modules/*
+.git/*

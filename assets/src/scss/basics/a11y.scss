@@ -1,0 +1,14 @@
+@use '../helpers/functions/rem';
+
+.screen-reader-text {
+	border: 0;
+	clip: rect(rem.px-to-rem(1), rem.px-to-rem(1), rem.px-to-rem(1), rem.px-to-rem(1));
+	clip-path: inset(50%);
+	height: rem.px-to-rem(1);
+	margin: rem.px-to-rem(-1);
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: rem.px-to-rem(1);
+	word-wrap: normal !important;
+}

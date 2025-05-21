@@ -1,0 +1,9 @@
+{
+  "css/base": "./scss/base.scss",
+  "css/base-admin": "./scss/base-admin.scss",
+  "css/base-login": "./scss/base-login.scss",
+  "css/webfonts": "./scss/webfonts.scss",
+  "js/assets": "./ts/assets.ts",
+  "js/base": "./ts/base.ts",
+  "js/base-admin": "./ts/base-admin.ts"
+}

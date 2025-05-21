@@ -1,0 +1,10 @@
+{
+  "**/*.{cjs,cts,js,jsx,mjs,svelte,ts,tsx}": [
+    "wp-scripts lint-js --config \"./.eslintrc.js\"",
+    "prettier --check"
+  ],
+  "scss/**/*.{css,less,sass,scss,styl}": [
+    "wp-scripts lint-style --allow-empty-input",
+    "prettier --check"
+  ]
+}

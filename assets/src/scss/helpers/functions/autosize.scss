@@ -1,0 +1,47 @@
+@use 'rem';
+
+/**
+* External libraries
+*/
+@use 'sass:math';
+
+/**
+* Loosely based on:
+* https://www.smashingmagazine.com/2022/10/fluid-typography-clamp-sass-functions
+*
+* autosize
+* ────────
+*
+* @param {number} $min-size The minimum breakpoint.
+* @param {number} $min-size The maximum breakpoint.
+* @param {number} $min-size The minimum font size.
+* @param {number} $min-size The maximum font size.
+*
+* @return {string} Returns generated clamp value.
+*
+* Usage
+* ─────
+*
+* Example input: font-size: #{autosize(320px, 960px, 16px, 32px)}
+*
+* Example output: font-size: clamp(1rem, 2.5vw + 0.5rem, 2rem);
+*/
+@function autosize(
+	$min-breakpoint,
+	$max-breakpoint,
+	$min-size,
+	$max-size,
+	$unit: vw
+) {
+	$slope: math.div($max-size - $min-size, $max-breakpoint - $min-breakpoint);
+	$slope-to-unit: $slope * 100;
+	$intercept-rem: rem.px-to-rem($min-size - $slope * $min-breakpoint);
+	$min-size-rem: rem.px-to-rem($min-size);
+	$max-size-rem: rem.px-to-rem($max-size);
+
+	@return clamp(
+		#{$min-size-rem},
+		#{$slope-to-unit}#{$unit} + #{$intercept-rem},
+		#{$max-size-rem}
+	);
+}

@@ -1,0 +1,139 @@
+@use '../helpers/functions/rem';
+
+/* Generic form styles goes here */
+
+/* GF Only */
+body .gform_wrapper,
+body .gform_wrapper .gform_body {
+	.gfield_label {
+		font-size: rem.px-to-rem(16);
+		font-family: var(--base-font-family);
+		color: var(--color-text);
+		font-weight: var(--font-weight-medium);
+	}
+
+	.gfield_description {
+		font-size: rem.px-to-rem(16);
+		font-family: var(--base-font-family);
+		color: var(--color-text);
+		padding-top: rem.px-to-rem(8);
+	}
+
+	/* Radio */
+	[class*='gchoice_'] {
+		display: flex;
+		align-items: center;
+		line-height: 1;
+		margin: rem.px-to-rem(8) 0;
+
+		&:first-of-type {
+			margin-top: 0;
+		}
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+
+		label {
+			padding: 0 0 0 rem.px-to-rem(8);
+		}
+	}
+
+	.gfield_checkbox {
+		.gchoice {
+			display: flex;
+			align-items: center;
+			align-self: center;
+			position: relative;
+			cursor: pointer;
+			padding-left: rem.px-to-rem(24);
+			line-height: rem.px-to-rem(26);
+			flex-direction: row;
+		}
+	}
+
+	/* Hides the default checkbox */
+	input[type='checkbox'] {
+		width: 0;
+		height: rem.px-to-rem(26);
+
+		/* stylelint-disable-next-line */
+		-moz-appearance: initial;
+	}
+
+	input[type='checkbox']::before {
+		display: block;
+		background-color: #eeefef;
+		position: absolute;
+		content: '';
+		-moz-content: '';
+		top: 0;
+		left: 0;
+		height: rem.px-to-rem(26);
+		width: rem.px-to-rem(26);
+		border-radius: rem.px-to-rem(3);
+	}
+
+	input[type='checkbox']::after {
+		display: block;
+		position: absolute;
+		content: '';
+		-moz-content: '';
+		top: rem.px-to-rem(6);
+		left: rem.px-to-rem(6);
+		width: rem.px-to-rem(14);
+		height: rem.px-to-rem(14);
+		background-image: url('../img/whitecheckmark.svg');
+		background-size: contain;
+		background-position: 50%;
+		background-repeat: no-repeat;
+		opacity: 0;
+	}
+
+	input[type='checkbox']:checked::before {
+		background-color: var(--wp--preset--color--green-1);
+	}
+
+	input[type='checkbox']:checked::after {
+		opacity: 1;
+	}
+
+	/* Radio */
+	input[type='radio'] {
+		background: #eeefef;
+		width: rem.px-to-rem(26);
+		min-width: rem.px-to-rem(26);
+		height: rem.px-to-rem(26);
+		border-radius: rem.px-to-rem(16);
+		position: relative;
+		border: none;
+		appearance: none;
+
+		&::before {
+			content: '';
+			-moz-content: '';
+		}
+
+		&:checked {
+			&::before {
+				position: absolute;
+				background-color: var(--wp--preset--color--green-1);
+				border-radius: rem.px-to-rem(16);
+				width: rem.px-to-rem(14);
+				height: rem.px-to-rem(14);
+				margin: rem.px-to-rem(6);
+			}
+		}
+	}
+
+	/* Consent */
+	.ginput_container_consent {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+
+		.gfield_consent_label {
+			padding-top: rem.px-to-rem(8);
+		}
+	}
+}

@@ -1,0 +1,44 @@
+@use '../mixins/selector-placeholders';
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: var(--root-em-size);
+}
+
+body {
+	position: relative;
+	font-family: var(--font-family-base);
+	line-height: var(--line-height-base);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+	@include selector-placeholders.container-selector-placeholder;
+}
+
+.site-content {
+	padding-top: var(--header-height-mobile);
+
+	@media (--large-up) {
+		padding-top: var(--header-height);
+	}
+}
+
+.post-content > * {
+	@include selector-placeholders.container-content-selector-placeholder;
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+/* Fix WP adminbar position */
+@media screen and (max-width: 600px) {
+	#wpadminbar {
+		position: fixed;
+	}
+}

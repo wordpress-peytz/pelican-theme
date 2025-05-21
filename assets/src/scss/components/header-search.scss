@@ -1,0 +1,61 @@
+@use '../helpers/functions/rem';
+@use '../mixins/a11y';
+@use '../mixins/icon';
+@use '../mixins/reset';
+
+.header-search {
+	display: flex;
+	align-items: center;
+}
+
+.header-search-form {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0;
+	background: var(--color-header-search-bg);
+	border-top: var(--border);
+	list-style: none;
+	padding: rem.px-to-rem(16) var(--side-gutter-width);
+	transition: transform var(--transition-base);
+	transform: translateY(-100%);
+	z-index: 15;
+}
+
+.header-search-form.header-search-form--is-open {
+	display: block;
+	transform: translateY(0);
+}
+
+.header-search-form form {
+	max-width: var(--max-width);
+	margin: 0 auto;
+}
+
+.header-search-toggle-button__button {
+	@include reset.reset-default-button-styles;
+
+	user-select: none;
+	width: rem.px-to-rem(50);
+	height: rem.px-to-rem(50);
+	display: grid;
+	place-content: center;
+	transition: opacity 0.3s ease;
+}
+
+.header-search-toggle-button__icon::before {
+	@include icon.icon;
+
+	content: '\e962';
+	font-size: rem.px-to-rem(24);
+}
+
+.header-search-toggle-button__button.active {
+	.header-search-toggle-button__icon::before {
+		content: '\e980';
+	}
+}
+
+.header-search-toggle-button__text {
+	@include a11y.screen-reader-text;
+}

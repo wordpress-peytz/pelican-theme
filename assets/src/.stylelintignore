@@ -1,0 +1,8 @@
+**/*.php
+css/helpers
+css/colors.css
+fonts/icon-font/**/*
+pattern-library/**/*
+scss/helpers/postcss-variables.scss
+scss/helpers/root-variables.scss
+scss/helpers/icon-font.scss

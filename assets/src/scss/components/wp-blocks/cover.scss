@@ -1,0 +1,11 @@
+.post-content > .wp-block-cover {
+	max-width: var(--max-width-content);
+
+	&.alignwide {
+		max-width: var(--max-width);
+	}
+
+	&.alignfull {
+		max-width: 100%;
+	}
+}

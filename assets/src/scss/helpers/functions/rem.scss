@@ -1,0 +1,8 @@
+@use 'sass:math';
+@use '../scss-variables-global';
+
+@function px-to-rem($px) {
+	$rems: math.div($px, scss-variables-global.$root-em-size) * 1rem;
+
+	@return $rems;
+}

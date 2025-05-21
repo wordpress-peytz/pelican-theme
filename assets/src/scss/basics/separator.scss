@@ -1,0 +1,10 @@
+@use '../helpers/functions/rem';
+
+.wp-block-separator {
+	border: none;
+	border-top: rem.px-to-rem(1) solid var(--color-separator);
+	height: 0;
+	margin: var(--wp--preset--spacing--20) 0;
+	max-width: none;
+	width: 100%;
+}

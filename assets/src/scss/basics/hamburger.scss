@@ -1,0 +1,31 @@
+@use '../helpers/functions/rem';
+@use '../mixins/icon';
+@use '../mixins/reset';
+
+.hamburger {
+	@include reset.reset-default-button-styles;
+
+	display: grid;
+	place-content: center;
+	height: rem.px-to-rem(50);
+	width: rem.px-to-rem(50);
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	@media (--large-up) {
+		display: none;
+	}
+}
+
+.hamburger__icon::before {
+	@include icon.icon;
+
+	content: '\e941';
+	font-size: rem.px-to-rem(24);
+}
+
+.hamburger.active .hamburger__icon::before {
+	content: '\e980';
+}

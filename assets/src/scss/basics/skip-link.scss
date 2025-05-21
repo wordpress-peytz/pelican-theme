@@ -1,0 +1,27 @@
+@use '../helpers/functions/rem';
+
+.skip-link {
+	background-color: var(--wp--preset--color--green-1);
+	border: 0;
+	clip: rect(0 0 0 0);
+	color: #000 !important;
+	display: inline-block;
+	height: rem.px-to-rem(1);
+	left: rem.px-to-rem(16);
+	line-height: 1;
+	margin: rem.px-to-rem(-1);
+	overflow: hidden;
+	opacity: 1 !important;
+	padding: rem.px-to-rem(16);
+	position: fixed;
+	top: rem.px-to-rem(16);
+	width: rem.px-to-rem(1);
+
+	&:focus {
+		display: block;
+		clip: auto;
+		height: auto;
+		width: auto;
+		z-index: 100000;
+	}
+}

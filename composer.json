@@ -1,0 +1,18 @@
+{
+  "name": "wp/pelican",
+  "description": "Pelican default theme",
+  "type": "wordpress-theme",
+  "keywords": ["wordpress", "theme"],
+  "authors": [
+    {
+      "name": "Peytz & Co",
+      "email": "wp@peytz.dk",
+      "homepage": "http://peytz.dk"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Pelican\\Theme\\": "includes/"
+    }
+  }
+}

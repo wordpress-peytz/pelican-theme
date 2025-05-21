@@ -1,0 +1,43 @@
+@use '../helpers/functions/rem';
+
+.wp-block-table {
+	border-collapse: separate;
+	border-spacing: rem.px-to-rem(4);
+	margin: var(--wp--preset--spacing--20) auto;
+	width: 100%;
+
+	table {
+		width: 100%;
+	}
+
+	tr,
+	th,
+	td {
+		text-align: left;
+	}
+
+	th {
+		background-color: var(--wp--preset--color--green-1);
+		color: var(--wp--preset--color--white);
+		padding: var(--wp--preset--spacing--10);
+	}
+
+	td {
+		border: none;
+		padding: var(--wp--preset--spacing--10);
+	}
+
+	tr:nth-child(odd) {
+		td {
+			background-color: rgba(0, 0, 0, 0.05);
+		}
+	}
+
+	tr:first-child {
+		td {
+			background-color: var(--wp--preset--color--green-1);
+			color: var(--wp--preset--color--white);
+			font-weight: var(--font-weight-semibold);
+		}
+	}
+}

@@ -1,0 +1,29 @@
+// Reset and Helpers
+@use './helpers/functions/rem';
+@use 'helpers/root-variables';
+@use 'helpers/media-queries';
+@use 'helpers/colors';
+@use 'helpers/icon-font';
+@use 'webfonts';
+
+// Set admin font family
+.editor-styles-wrapper {
+	font-family: var(--font-family-base);
+}
+
+// Set reusable blocks with attribute data-align='full' to actually have max-width 100%
+[data-align='full'] .wp-block,
+.wp-block:has([data-align='full']),
+.wp-block:has([data-align='full']) .wp-block {
+	max-width: 100%;
+}
+
+.wp-admin .block-editor .cf-field {
+	padding: rem.px-to-rem(20) rem.px-to-rem(25);
+
+	.cf-radio__list {
+		display: flex;
+		flex-flow: column nowrap;
+		gap: rem.px-to-rem(10);
+	}
+}

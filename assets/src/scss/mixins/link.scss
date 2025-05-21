@@ -1,0 +1,25 @@
+@use '../helpers/functions/rem';
+
+/* stylelint-disable scss/at-mixin-pattern */
+@mixin link {
+	color: var(--wp--preset--color--black);
+	font-weight: var(--font-weight-medium);
+	text-decoration: underline;
+	text-underline-offset: rem.px-to-rem(3);
+	text-decoration-color: transparent;
+	transition: var(--transition-base);
+
+	&:hover,
+	&:focus {
+		text-decoration-color: currentcolor;
+	}
+}
+
+@mixin link--underline {
+	text-decoration-color: currentcolor;
+
+	&:hover,
+	&:focus {
+		text-decoration-color: transparent;
+	}
+}

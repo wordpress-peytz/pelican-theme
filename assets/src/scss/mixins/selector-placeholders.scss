@@ -1,0 +1,78 @@
+@use '../helpers/functions/rem';
+
+// To avoid having duplicate 'container'-styles in our stylesheet we use '%' (Extend/Inheritance).
+// https://sass-lang.com/guide/#extend-inheritance;
+
+%container,
+.container {
+	max-width: calc(var(--max-width) + (2 * var(--side-gutter-width)));
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: var(--side-gutter-width);
+	padding-right: var(--side-gutter-width);
+	width: 100%;
+}
+
+%container-content,
+.container-content {
+	max-width: calc(var(--max-width-content) + (2 * var(--side-gutter-width)));
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: var(--side-gutter-width);
+	padding-right: var(--side-gutter-width);
+	width: 100%;
+}
+
+%container-content-wide,
+.container-content-wide {
+	max-width: calc(
+	var(--max-width-content-wide) + (2 * var(--side-gutter-width))
+	);
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: var(--side-gutter-width);
+	padding-right: var(--side-gutter-width);
+	width: 100%;
+}
+
+%container-content-wider,
+.container-content-wider {
+	max-width: calc(
+	var(--max-width-content-wider) + (2 * var(--side-gutter-width))
+	);
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: var(--side-gutter-width);
+	padding-right: var(--side-gutter-width);
+	width: 100%;
+}
+
+%container-list,
+.container-list {
+	max-width: calc(var(--max-width-list) + (2 * var(--side-gutter-width)));
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: var(--side-gutter-width);
+	padding-right: var(--side-gutter-width);
+	width: 100%;
+}
+
+@mixin container-selector-placeholder {
+	@extend %container;
+}
+
+@mixin container-content-selector-placeholder {
+	@extend %container-content;
+}
+
+@mixin container-content-wide-selector-placeholder {
+	@extend %container-content-wide;
+}
+
+@mixin container-content-wider-selector-placeholder {
+	@extend %container-content-wider;
+}
+
+@mixin container-list-selector-placeholder {
+	@extend %container-list;
+}

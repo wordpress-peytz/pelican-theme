@@ -1,0 +1,10 @@
+@use 'functions/rem';
+
+/* Border settings */
+$border-width: rem.px-to-rem(1);
+
+/* Button settings */
+$button-padding-x: rem.px-to-rem(15);
+$button-padding-y: rem.px-to-rem(40);
+$button-border-width: rem.px-to-rem(2);
+$button-border-radius: rem.px-to-rem(30);

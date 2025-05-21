@@ -1,0 +1,28 @@
+@use '../helpers/functions/rem';
+@use '../mixins/selector-placeholders';
+
+blockquote,
+.wp-block-quote {
+	@include selector-placeholders.container-selector-placeholder;
+
+	margin-top: var(--wp--preset--spacing--40);
+	margin-bottom: var(--wp--preset--spacing--40);
+	position: relative;
+
+	p {
+		color: var(--color-text);
+		font-size: rem.px-to-rem(28);
+		font-style: italic;
+		font-weight: var(--font-weight-medium);
+		margin: 0;
+	}
+
+	cite {
+		color: var(--color-text);
+		display: block;
+		font-size: var(--font-size-base);
+		font-style: normal;
+		font-weight: var(--font-weight-medium);
+		margin-top: var(--wp--preset--spacing--20);
+	}
+}
