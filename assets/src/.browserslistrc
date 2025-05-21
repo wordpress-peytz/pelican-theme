@@ -1,0 +1,23 @@
+# Browsers that we support
+
+# Default browsers for production
+> 1%
+last 2 versions
+not dead
+
+# Include slightly older browsers for better compatibility
+# last 3 versions
+
+# Exclude very old browsers
+not ie <= 11
+not op_mini all
+
+# Include modern browsers explicitly
+chrome >= 60
+firefox >= 60
+safari >= 12
+edge >= 79
+
+# Mobile browsers
+ios >= 12
+android >= 6

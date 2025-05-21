@@ -1,0 +1,17 @@
+@use '../mixins/link';
+
+a {
+	@include link.link;
+}
+
+.post-content p a {
+	@include link.link;
+	@include link.link--underline;
+
+	color: var(--wp--preset--color--black);
+
+	&:hover,
+	&:focus {
+		text-decoration-color: transparent;
+	}
+}

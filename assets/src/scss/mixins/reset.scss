@@ -1,0 +1,14 @@
+@mixin reset-default-button-styles {
+	appearance: none;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	text-align: initial;
+}
+
+@mixin reset-default-list-styles {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}

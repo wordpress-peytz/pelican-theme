@@ -1,0 +1,25 @@
+.card-list {
+	display: grid;
+	grid-gap: var(--grid-gutter);
+	width: 100%;
+}
+
+@media (--medium-up) {
+	.card-list--2 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.card-list--3 {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.card-list--4 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (--large-up) {
+	.card-list--4 {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}

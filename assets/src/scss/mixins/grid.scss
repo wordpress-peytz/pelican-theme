@@ -1,0 +1,12 @@
+@mixin grid($columns: 12) {
+	display: grid;
+	grid-template-columns: repeat($columns, 1fr);
+
+	@media (--medium-up) {
+		column-gap: var(--grid-gutter-width);
+	}
+}
+
+@mixin grid-span($start: 1, $span: 12) {
+	grid-column: $start / span $span;
+}

@@ -1,0 +1,16 @@
+@use 'sass:color';
+
+/* typographic variables */
+$root-em-size: 16;
+
+/* grid */
+$max-width: 1400;
+$max-width-header: 1400;
+$max-width-list: 1160;
+$max-width-pagination: 1160;
+$max-width-content-wider: 1160;
+$max-width-content-wide: 920;
+$max-width-content: 680;
+$grid-col-width: 80;
+$grid-gutter-width: 40;
+$side-gutter-width: 20;

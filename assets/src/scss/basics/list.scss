@@ -1,0 +1,8 @@
+@use '../helpers/functions/rem';
+
+.post-content {
+	ol,
+	ul {
+		padding-left: calc(var(--wp--preset--spacing--20) + rem.px-to-rem(25));
+	}
+}

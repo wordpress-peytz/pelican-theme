@@ -1,0 +1,17 @@
+/* media queries */
+$breakpoint-small: 400;
+$breakpoint-medium: 720;
+$breakpoint-large: 1040;
+$breakpoint-xlarge: 1400;
+
+@custom-media --small-down (max-width: #{$breakpoint-small}px);
+@custom-media --small-up (min-width: #{$breakpoint-small + 1}px);
+@custom-media --small-only (min-width: #{$breakpoint-small + 1}px) and (max-width: #{$breakpoint-medium}px);
+@custom-media --medium-down (max-width: #{$breakpoint-medium}px);
+@custom-media --medium-up (min-width: #{$breakpoint-medium + 1}px);
+@custom-media --medium-only (min-width: #{$breakpoint-medium + 1}px) and (max-width: #{$breakpoint-large}px);
+@custom-media --large-down (max-width: #{$breakpoint-large}px);
+@custom-media --large-up (min-width: #{$breakpoint-large + 1}px);
+@custom-media --large-only (min-width: #{$breakpoint-large + 1}px) and (max-width: #{$breakpoint-xlarge}px);
+@custom-media --xlarge-down (max-width: #{$breakpoint-xlarge}px);
+@custom-media --xlarge-up (min-width: #{$breakpoint-xlarge + 1}px);

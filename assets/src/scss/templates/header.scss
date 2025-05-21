@@ -1,0 +1,68 @@
+@use '../helpers/functions/rem';
+
+.site-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 9999;
+	box-shadow: var(--shadow-header);
+}
+
+body.admin-bar .site-header {
+	top: rem.px-to-rem(46);
+
+	@media screen and (min-width: 783px) {
+		top: rem.px-to-rem(32);
+	}
+}
+
+.site-header--scrolling {
+	position: fixed;
+}
+
+.body-overlay.body-overlay--is-active {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 10;
+	background-color: rgba(0, 0, 0, 0.75);
+	transition: background-color 0.15s ease-in-out;
+}
+
+.main-header-bar-wrap {
+	display: flex;
+	background-color: var(--color-header-bg);
+	min-height: var(--header-height-mobile);
+	z-index: 25;
+	position: relative;
+	padding: rem.px-to-rem(5) var(--side-gutter-width);
+
+	@media (--large-up) {
+		min-height: var(--header-height);
+	}
+}
+
+.main-header-bar {
+	display: flex;
+	gap: rem.px-to-rem(8);
+	align-items: center;
+	margin: 0 auto;
+	width: 100%;
+	max-width: var(--max-width);
+}
+
+.menu-wrapper {
+	order: 2;
+
+	@media (--large-up) {
+		order: 0;
+		display: flex;
+		align-items: center;
+	}
+}

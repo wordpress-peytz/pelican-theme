@@ -1,0 +1,40 @@
+@use '../helpers/functions/autosize' as *;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 1em;
+	margin-bottom: 0.25em;
+	word-break: break-word;
+}
+
+h1 {
+	font: var(--font-h1);
+
+	&.has-x-large-font-size {
+		font-size: autosize(400, 1400, 58, 78) !important;
+	}
+}
+
+h2 {
+	font: var(--font-h2);
+}
+
+h3 {
+	font: var(--font-h3);
+}
+
+h4 {
+	font: var(--font-h4);
+}
+
+h5 {
+	font: var(--font-h5);
+}
+
+h6 {
+	font: var(--font-h6);
+}

@@ -1,0 +1,13 @@
+.logo {
+	flex-grow: 2;
+	display: flex;
+}
+
+.logo__image {
+	max-width: 100%;
+	height: auto;
+
+	@media (--medium-up) {
+		max-width: none !important;
+	}
+}

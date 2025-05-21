@@ -1,0 +1,312 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Pelican\n"
+"POT-Creation-Date: 2024-03-13 21:04+0100\n"
+"PO-Revision-Date: 2015-02-23 12:50+0100\n"
+"Last-Translator: Phh <phh@peytz.dk>\n"
+"Language-Team: Peytz & Co <wordpress@peytz.dk>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;esc_attr__;esc_html__;_e;esc_attr_e;esc_html_e;_x:1,2c;_ex:1,2c;esc_attr_x:1,2c;esc_html_x:1,2c;_n:1,2;_nx:4c,1,2;_n_noop:1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets\n"
+"X-Poedit-SearchPathExcluded-1: bower_components\n"
+"X-Poedit-SearchPathExcluded-2: node_modules\n"
+
+#: comments.php:28
+msgid "<span class=\"comments__count\">No</span> Responses"
+msgstr ""
+
+#: comments.php:28
+msgid "<span class=\"comments__count\">One</span> Response"
+msgstr ""
+
+#: comments.php:28
+msgid "<span class=\"comments__count\">%</span> Responses"
+msgstr ""
+
+#: comments.php:42
+msgid "Comments are closed."
+msgstr ""
+
+#: includes/Core/Hero.php:26
+msgid "Hero"
+msgstr ""
+
+#: includes/Core/Hero.php:84
+msgid "Hide hero"
+msgstr ""
+
+#: includes/Core/Hero.php:93
+msgid "Remove spacing below hero"
+msgstr ""
+
+#: includes/Core/Hero.php:102
+msgid "Remove hero image"
+msgstr ""
+
+#: includes/Core/Hero.php:111
+msgid "Image dimming"
+msgstr ""
+
+#: includes/Core/Hero.php:137
+msgid "Alternative title"
+msgstr ""
+
+#: includes/Core/Hero.php:139
+msgid "Use a different title than the page title. HTML inline elements are allowed (e.g. links and bold text)."
+msgstr ""
+
+#: includes/Core/Hero.php:148
+msgid "Subtitle"
+msgstr ""
+
+#: includes/Core/Hero.php:158
+msgid "Link"
+msgstr ""
+
+#: includes/Core/Hero.php:167
+msgid "Link text"
+msgstr ""
+
+#: includes/Core/Menus.php:25
+msgid "Main Menu"
+msgstr ""
+
+#: includes/Core/Menus.php:26
+msgid "Mobile Menu"
+msgstr ""
+
+#: includes/Core/ThemeSetup.php:55
+msgid "Sidebar"
+msgstr ""
+
+#: includes/Core/ThemeSetup.php:57
+msgid "This is the primary sidebar. Shows up on all pages."
+msgstr ""
+
+#: includes/Core/ThemeSetup.php:68
+msgid "Footer"
+msgstr ""
+
+#: includes/Core/ThemeSetup.php:86 partials/header-logo.php:3
+msgid "Home"
+msgstr ""
+
+#: includes/Customizer/PageSettings.php:54
+msgid "Page Layout"
+msgstr ""
+
+#: includes/Customizer/PageSettings.php:58
+msgid "Normal page"
+msgstr ""
+
+#: includes/Customizer/PageSettings.php:59
+msgid "Widget page"
+msgstr ""
+
+#: includes/Customizer/PageSettings.php:64
+msgid "Show process menu"
+msgstr ""
+
+#: includes/Customizer/PageSettings.php:83
+msgid "Page Options"
+msgstr ""
+
+#: includes/Customizer/Settings404.php:44
+msgid "404 Settings"
+msgstr ""
+
+#: includes/Customizer/Settings404.php:51
+msgid "Title"
+msgstr ""
+
+#: includes/Customizer/Settings404.php:58
+msgid "Text"
+msgstr ""
+
+#: includes/Customizer/Settings404.php:65
+msgid "Chose custom page to show as 404 page"
+msgstr ""
+
+#: includes/Customizer/VisualSettings.php:42
+msgid "Visual Settings"
+msgstr ""
+
+#: includes/Customizer/VisualSettings.php:52
+msgid "Color 1"
+msgstr ""
+
+#: includes/Customizer/VisualSettings.php:62
+msgid "Color 2"
+msgstr ""
+
+#: includes/Customizer/VisualSettings.php:72
+msgid "Color 3"
+msgstr ""
+
+#: includes/Customizer/VisualSettings.php:82
+msgid "Color 4"
+msgstr ""
+
+#: includes/Customizer/VisualSettings.php:92
+msgid "Color 5"
+msgstr ""
+
+#: includes/Customizer/VisualSettings.php:99
+#: includes/Customizer/VisualSettings.php:115
+msgid "Add a link href value from the Embed dialog on Google Fonts. Example: https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed"
+msgstr ""
+
+#: includes/Customizer/VisualSettings.php:100
+msgid "Header font path"
+msgstr ""
+
+#: includes/Customizer/VisualSettings.php:107
+#: includes/Customizer/VisualSettings.php:123
+msgid "Add a CSS rule value from the Embed dialog on Google Fonts. Example: 'IBM Plex Sans Condensed', sans-serif"
+msgstr ""
+
+#: includes/Customizer/VisualSettings.php:108
+msgid "Header font CSS stack"
+msgstr ""
+
+#: includes/Customizer/VisualSettings.php:116
+msgid "Text font path"
+msgstr ""
+
+#: includes/Customizer/VisualSettings.php:124
+msgid "Text font CSS stack"
+msgstr ""
+
+#: includes/Customizer/VisualSettings.php:131
+msgid "Hide author on posts"
+msgstr ""
+
+#: includes/Customizer/VisualSettings.php:138
+msgid "Hide date on posts"
+msgstr ""
+
+#: includes/Customizer/VisualSettings.php:145
+msgid "Hide search"
+msgstr ""
+
+#: includes/Markup/FunctionHooksBodyTop.php:53
+msgid "Skip to content"
+msgstr ""
+
+#: includes/Markup/FunctionHooksPrimary.php:33
+msgid "Site content"
+msgstr ""
+
+#: includes/Markup/FunctionHooksPrimary.php:35
+msgid "Page content head section"
+msgstr ""
+
+#: includes/Markup/FunctionHooksPrimary.php:65
+msgid "Content footer section"
+msgstr ""
+
+#: includes/Markup/FunctionHooksPrimary.php:84
+msgid "Primary content"
+msgstr ""
+
+#: includes/TemplateFunctions/Breadcrumb.php:334
+msgid "Page"
+msgstr ""
+
+#: partials/archive-header.php:10
+msgid "Search Results for:"
+msgstr ""
+
+#: partials/archive-header.php:25 partials/archive-header.php:28
+#: partials/archive-header.php:31
+msgid "Archive:"
+msgstr ""
+
+#: partials/archive-header.php:35
+msgid "Author:"
+msgstr ""
+
+#: partials/navigation-main.php:21
+msgid "Menu"
+msgstr ""
+
+#: partials/post-categories.php:3
+msgid "Categories:"
+msgstr ""
+
+#: partials/post-metadata.php:3
+msgid "By"
+msgstr ""
+
+#: partials/post-pagination.php:6
+msgid "Previous"
+msgstr ""
+
+#: partials/post-pagination.php:7
+msgid "Next"
+msgstr ""
+
+#: partials/post-primary-category.php:7
+#, php-format
+msgid "Go to %s"
+msgstr ""
+
+#: partials/post-socialmedia-share.php:3 partials/post-socialmedia-share.php:4
+msgid "Share on Facebook"
+msgstr ""
+
+#: partials/post-socialmedia-share.php:8 partials/post-socialmedia-share.php:9
+msgid "Share on Twitter"
+msgstr ""
+
+#: partials/post-socialmedia-share.php:13
+#: partials/post-socialmedia-share.php:14
+msgid "Share on Linkedin"
+msgstr ""
+
+#: partials/post-socialmedia-share.php:19
+#: partials/post-socialmedia-share.php:20
+msgid "Share by email"
+msgstr ""
+
+#: partials/post-socialmedia-share.php:24
+#: partials/post-socialmedia-share.php:25
+msgid "Print"
+msgstr ""
+
+#: partials/post-terms.php:5
+msgid "Categories"
+msgstr ""
+
+#: partials/post-terms.php:12
+msgid "Tags"
+msgstr ""
+
+#: partials/searchform-header.php:12
+msgid "Enter searchword…"
+msgstr ""
+
+#: searchform.php:12 searchform.php:13
+msgid "Hit enter to Search..."
+msgstr ""
+
+#: template-parts/content-404.php:12
+msgid "404 - Not Found"
+msgstr ""
+
+#: template-parts/content-404.php:13
+msgid "The content you were looking for may have been moved or unpublished"
+msgstr ""
+
+#: template-parts/search-not-found.php:11
+#, php-format
+msgid "Sorry, we didn't find any results for <strong>%s</strong>."
+msgstr ""

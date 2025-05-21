@@ -1,0 +1,109 @@
+/* stylelint-disable */
+
+@use 'functions/rem';
+@use 'functions/autosize';
+@use 'scss-variables-global';
+@use 'scss-variables-local';
+
+/* Custom properties */
+
+// The below line has been added because VSCode ignores the .prettierignore file
+/* prettier-ignore */
+:root {
+	/* Grid */
+	// please note that in order for the scss variables to work in the context of native css variables, they must be string interpolated.
+	// https://sass-lang.com/documentation/interpolation
+	--max-width:               calc((#{scss-variables-global.$max-width} / #{scss-variables-global.$root-em-size}) * 1rem);
+	--max-width-header:        calc((#{scss-variables-global.$max-width-header} / #{scss-variables-global.$root-em-size}) * 1rem);
+	--max-width-list:          calc((#{scss-variables-global.$max-width-list} / #{scss-variables-global.$root-em-size}) * 1rem);
+	--max-width-pagination:    calc((#{scss-variables-global.$max-width-pagination} / #{scss-variables-global.$root-em-size}) * 1rem);
+	--max-width-content-wider: calc((#{scss-variables-global.$max-width-content-wider} / #{scss-variables-global.$root-em-size}) * 1rem);
+	--max-width-content-wide:  calc((#{scss-variables-global.$max-width-content-wide} / #{scss-variables-global.$root-em-size}) * 1rem);
+	--max-width-content:       calc((#{scss-variables-global.$max-width-content} / #{scss-variables-global.$root-em-size}) * 1rem);
+	--grid-col-width:          calc((#{scss-variables-global.$grid-col-width} / #{scss-variables-global.$root-em-size}) * 1rem);
+	--grid-gutter-width:       calc((#{scss-variables-global.$grid-gutter-width} / #{scss-variables-global.$root-em-size}) * 1rem);
+	--side-gutter-width:       calc((#{scss-variables-global.$side-gutter-width} / #{scss-variables-global.$root-em-size}) * 1rem);
+
+	/* Theme settings */
+	--header-height-mobile: #{rem.px-to-rem(70)};
+	--header-height:        #{rem.px-to-rem(100)};
+
+	/* Typography */
+	--font-family-base:    'Poppins', sans-serif;
+	--font-family-heading: var(--font-family-base);
+
+	/* Type: Sizes */
+	--root-em-size:            #{scss-variables-global.$root-em-size}px; /* Used to define the root em size on the `html` element. All other sizes should be relative to this. */
+	--font-size-base:          #{rem.px-to-rem(scss-variables-global.$root-em-size)};
+	--font-size-xs:            #{rem.px-to-rem(12)};
+	--font-size-s:             #{rem.px-to-rem(14)};
+	--font-size-m:             #{rem.px-to-rem(16)};
+	--font-size-l:             #{rem.px-to-rem(18)};
+	--font-size-xl:            #{rem.px-to-rem(20)};
+	--font-size-h1:            #{autosize.autosize(400, 1400, 40, 58)};
+	--font-size-h2:            #{autosize.autosize(400, 1400, 28, 34)};
+	--font-size-h3:            #{autosize.autosize(400, 1400, 22, 26)};
+	--font-size-h4:            #{autosize.autosize(400, 1400, 18, 20)};
+	--font-size-h5:            #{rem.px-to-rem(16)};
+	--font-size-h6:            #{rem.px-to-rem(16)};
+	--font-size-excerpt:       #{rem.px-to-rem(18)};
+	--font-size-hero-title:    #{autosize.autosize(400, 1400, 40, 68)};
+	--font-size-hero-subtitle: #{autosize.autosize(400, 1400, 28, 34)};
+	--font-size-button:        #{rem.px-to-rem(18)};
+	--font-size-label:         #{rem.px-to-rem(12)};
+	--font-size-paragraph:     #{rem.px-to-rem(16)};
+
+	/* Type: Line height */
+	--line-height-base:      1.1;
+	--line-height-heading:   1.2;
+	--line-height-paragraph: 1.5;
+
+	/* Type: Font weight */
+	--font-weight-medium:     500;
+	--font-weight-semibold:   600;
+	--font-weight-bold:       700;
+
+	/* Font shorthand */
+	--font-h1:        var(--font-weight-bold) var(--font-size-h1) / var(--line-height-heading) var(--font-family-base);
+	--font-h2:        var(--font-weight-bold) var(--font-size-h2) / var(--line-height-heading) var(--font-family-base);
+	--font-h3:        var(--font-weight-bold) var(--font-size-h3) / var(--line-height-heading) var(--font-family-base);
+	--font-h4:        var(--font-weight-bold) var(--font-size-h4) / var(--line-height-heading) var(--font-family-base);
+	--font-h5:        var(--font-weight-bold) var(--font-size-h5) / var(--line-height-heading) var(--font-family-base);
+	--font-h6:        var(--font-weight-bold) var(--font-size-h6) / var(--line-height-heading) var(--font-family-base);
+	--font-button:    var(--font-weight-medium) var(--font-size-button) / 1rem var(--font-family-base);
+	--font-label:     var(--font-weight-semibold) var(--font-size-label) / var(--line-height-base) var(--font-family-base);
+	--font-paragraph: var(--font-size-paragraph) / var(--line-height-base) var(--font-family-base);
+
+	/* Colors */
+	--color-header-bg:        #fff;
+	--color-header-search-bg: #fff;
+	--color-text:             #000;
+	--color-text-light:       #fff;
+	--color-text-gray:        #6f7373;
+	--color-heading:          var(--color-text);
+	--color-separator:        #ccc;
+	--color-background-gray:  #f1f1f1;
+	--color-gray-1:           #ccc;
+
+	/* Link settings */
+	--button-padding-x:     #{scss-variables-local.$button-padding-x};
+	--button-padding-y:     #{scss-variables-local.$button-padding-y};
+	--button-border-width:  #{scss-variables-local.$button-border-width};
+	--button-border-radius: #{scss-variables-local.$button-border-radius};
+
+	/* Border color */
+	--border-color:  #ddd;
+	--border:        #{scss-variables-local.$border-width} solid var(--border-color);
+	--border-radius: #{rem.px-to-rem(8)};
+
+	/* Box shadow */
+	--shadow-base:       0 #{rem.px-to-rem(1)} #{rem.px-to-rem(2)} 0 rgba(0, 0, 0, 0.1);
+	--shadow-card:       0 #{rem.px-to-rem(8)} #{rem.px-to-rem(16)} 0 rgba(0, 0, 0, 0.1);
+	--shadow-card-hover: 0 #{rem.px-to-rem(8)} #{rem.px-to-rem(16)} 0 rgba(0, 0, 0, 0.2);
+	--shadow-header:     0 0 #{rem.px-to-rem(5)} 0 rgba(0, 0, 0, 0.1);
+
+	/* Transitions */
+	--transition-base: 150ms ease-in-out;
+	--transition-card: 250ms ease-in-out;
+	--transition-1:    300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}

@@ -1,0 +1,26 @@
+figure figcaption {
+	padding-left: var(--side-gutter-width);
+	padding-right: var(--side-gutter-width);
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.post-content .wp-block-image {
+	margin-top: var(--wp--preset--spacing--40);
+	margin-bottom: var(--wp--preset--spacing--40);
+}
+
+.wp-block-image figcaption {
+	font-size: var(--font-size-s);
+	font-style: italic;
+}
+
+.wp-block-image figure.alignleft figcaption,
+.wp-block-image figure.alignright figcaption,
+.wp-block-image figure.aligncenter figcaption {
+	margin-bottom: 0;
+	width: 100%;
+}

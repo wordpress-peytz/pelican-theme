@@ -1,0 +1,10 @@
+p.has-background,
+h1.has-background,
+h2.has-background,
+h3.has-background,
+h4.has-background,
+h5.has-background,
+h6.has-background {
+	max-width: var(--max-width-content);
+	padding: var(--wp--preset--spacing--20);
+}

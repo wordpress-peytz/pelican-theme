@@ -1,0 +1,58 @@
+.btn-wrapper,
+.wp-block-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: var(--wp--preset--spacing--30);
+	margin-bottom: var(--wp--preset--spacing--30);
+}
+
+.btn-wrapper {
+	gap: var(--wp--style--block-gap);
+}
+
+.btn,
+button.button,
+button[type='submit'],
+.wp-block-button .wp-block-button__link {
+	position: relative;
+	display: inline-block;
+	border-radius: var(--button-border-radius);
+	box-shadow: none;
+	cursor: pointer;
+	font: var(--font-button);
+	margin: 0;
+	padding: var(--button-padding-x) var(--button-padding-y);
+	text-decoration: none;
+	text-align: center;
+	word-break: break-word;
+	transition: all var(--transition-base);
+}
+
+.btn,
+button.button,
+button[type='submit'] {
+	background-color: var(--wp--preset--color--green-1);
+	border: var(--button-border-width) solid var(--wp--preset--color--green-1);
+	color: var(--wp--preset--color--white);
+
+	&:hover {
+		background-color: transparent;
+		border: var(--button-border-width) solid
+		var(--wp--preset--color--green-1);
+		color: var(--wp--preset--color--green-1);
+	}
+}
+
+.btn--outlined,
+.wp-block-button.is-style-outline .wp-block-button__link {
+	color: var(--wp--preset--color--green-1);
+	background-color: transparent;
+	border: var(--button-border-width) solid var(--wp--preset--color--green-1);
+	padding: var(--button-padding-x) var(--button-padding-y);
+
+	&:hover {
+		background-color: var(--wp--preset--color--green-1);
+		color: var(--wp--preset--color--white);
+	}
+}

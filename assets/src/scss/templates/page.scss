@@ -1,0 +1,7 @@
+@use '../mixins/selector-placeholders';
+
+body.page {
+	&.hero-hidden .post-header {
+		@include selector-placeholders.container-selector-placeholder;
+	}
+}

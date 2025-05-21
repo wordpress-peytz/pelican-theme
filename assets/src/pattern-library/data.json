@@ -1,0 +1,160 @@
+{
+  "project_logo": null,
+  "project_favicon": "favicon.png",
+  "project_name": null,
+  "project_url": null,
+  "copyright_start_year": null,
+  "client_name": null,
+  "client_url": null,
+  "creators": [
+    {
+      "name": null,
+      "url": null
+    }
+  ],
+  "theme": {
+    "border_color": "#E0E6ED",
+    "highlight_color": "#F9FAFC",
+    "brand_color": "#00585C",
+    "background_color": "#FFFFFF",
+    "code_highlight_theme": "github",
+    "override_code_highlight_bg": "#F9FAFC",
+    "sample_dark_background": "#333333",
+    "show_project_name": true,
+    "show_version": true,
+    "max_width": null,
+    "titles": {
+      "library_title": "Pattern Library",
+      "pages_title": "Overview",
+      "components_title": "Components"
+    }
+  },
+  "assets": {
+    "css": ["../../dist/css/webfonts.css", "../../dist/css/webfonts.min.css", "../../dist/css/base.css", "../../dist/css/base.min.css"],
+    "js": ["../../dist/js/base.js", "../../dist/js/base.min.js"]
+  },
+  "font_libraries": {
+    "typekit_code": null,
+    "typography_web_fonts": null,
+    "google_web_fonts": null
+  },
+  "content": {
+    "show_first_page_on_load": true,
+    "title": "Overview",
+    "pages": [
+      {
+        "name": "introduction",
+        "title": "Introduction",
+        "file": "./pages/intro.md"
+      }
+    ]
+  },
+  "groups": [
+    {
+      "name": "icons",
+      "title": "Icons",
+      "components": [
+        {
+          "group": "icons",
+          "name": "icons",
+          "title": "Icons"
+        }
+      ]
+    },
+    {
+      "name": "typography",
+      "title": "Typography",
+      "components": [
+        {
+          "group": "typography",
+          "name": "headings",
+          "title": "Headings & Paragraphs",
+          "width": "half"
+        },
+        {
+          "group": "typography",
+          "name": "lists",
+          "title": "Lists",
+          "width": "half"
+        }
+      ]
+    },
+    {
+      "name": "components",
+      "title": "Components",
+      "components": [
+        {
+          "group": "components",
+          "name": "buttons",
+          "title": "Buttons",
+          "width": "half"
+        },
+        {
+          "group": "components",
+          "name": "pagination",
+          "title": "Pagination",
+          "width": "half"
+        },
+        {
+          "group": "components",
+          "name": "quote",
+          "title": "Quote",
+          "width": "half"
+        },
+        {
+          "group": "components",
+          "name": "table",
+          "title": "Table",
+          "width": "half"
+        }
+      ]
+    },
+    {
+      "name": "cards",
+      "title": "Cards",
+      "components": [
+        {
+          "group": "cards",
+          "name": "card",
+          "title": "Card",
+          "width": "half"
+        },
+        {
+          "group": "cards",
+          "name": "card-individual-links",
+          "title": "Card - individual links",
+          "width": "half"
+        }
+      ]
+    },
+    {
+      "name": "card-list",
+      "title": "Card Lists",
+      "components": [
+        {
+          "group": "card-list",
+          "name": "card-list-1",
+          "title": "Card List 1",
+          "width": "half"
+        },
+        {
+          "group": "card-list",
+          "name": "card-list-2",
+          "title": "Card List 2",
+          "width": "half"
+        },
+        {
+          "group": "card-list",
+          "name": "card-list-3",
+          "title": "Card List 3"
+        },
+        {
+          "group": "card-list",
+          "name": "card-list-4",
+          "title": "Card List 4"
+        }
+      ]
+    }
+  ],
+  "version": "1.9.5"
+}
