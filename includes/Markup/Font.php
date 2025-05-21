@@ -17,10 +17,8 @@ class Font {
 		// default to using minified files.
 		$inflix = '.min';
 
-		// if ( \PCo\MU\Plugin::is_local() ) {
-			// default to using development (non-minified) files, if they exist and the environment is local.
-			$inflix = ( file_exists( get_template_directory() . '/assets/dist/css/webfonts.css' ) ? '' : '.min' );
-		// }
+    // default to using development (non-minified) files, if they exist and the environment is local.
+    $inflix = ( file_exists( get_template_directory() . '/assets/dist/css/webfonts.css' ) ? '' : '.min' );
 
 		return $inflix;
 	}
