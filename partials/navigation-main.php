@@ -11,7 +11,7 @@
 	<nav class="<?php echo apply_filters( THEMEDOMAIN . '_menu_wrapper_class', 'menu-wrapper' ); ?>">
 
 		<?php if ( has_nav_menu( 'main-nav' ) ) : ?>
-			<?php Pelican\Theme\Core\Menus::main_menu(); ?>
+			<?php Pelican\Theme\Core\AddMenus::main_menu(); ?>
 		<?php endif; ?>
 
 		<?php if ( has_nav_menu( 'main-nav-mobile' ) ) : ?>
